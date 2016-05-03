@@ -1,0 +1,90 @@
+// Más allá de la pampa 
+// Borrador
+
+=== define_variables y mecánicas ===
+
+// determina el paso de turno si salud < 1 END
+
+VAR salud = 7
+
+// determina la capacidad de recordar. La capacidad de recordar permite al PJ avanzar también hacia atrás, lo que permitirá al PJ Variar puntos de salud (ya sean positivos o negativos)
+
+VAR conciencia = true
+
+// cuando salud < 5 -> conciencia = false. lo que desactivará toda opción de ir hacia atrás, dependiendo el éxito únicamente de los puntos de salud ya acumulados - tiradas - Dificultad de la acción. Y el éxito se vuelve lineal y la historia más directa.
+
+=== Hombre_caido ===
+
+/* Plot: Butch inicia tirado en el suelo. Recuperado parcialmente de una inconcia producida por una larga caminata o una herida o simplemente un delirio producido por algún trauma. Los antecedentes de la situación de == hombre_caido == son desconocidas hasta el momento.*/ 
+
+En primer lugar la situación == hombre_caido == se plantea como un desafío: llegar al poblado cercano para ser rescatado por alguien. La situación arroja al jugador a un sistema de opciones que inician la partida. Los puntos de salud dependen de los puntos obtenidos en las acciones de flashback. 
+
+* 	Esperar. Conservar energías para que pase la noche y ser visto durante el día. SIMPLE
+	~ Decrece_Salud. el frío de la noche puede dañar ceveramente la salud del PJ Si no llegas a pasar ambos turnos -> END_GAME_IN_DEATH "Amaneces muerto de frío"
+		* Seguir Esperando. SIMPLE
+	~ Decrece_Salud. el frío de la noche puede dañar ceveramente la salud del PJ Si no llegas a pasar ambos turnos -> END_GAME_IN_DEATH "Amaneces muerto de frío"
+	Si tu salud es > sobrevives a la noche. Sos encontrado por un == Hombre a Caballo == -> == Hombre a Caballo ==
+		* Avanzar. No debe faltar mucho para el amanecer -> Avanzar
+
+* 	Avanzar. Poner en riezgo la vida gastando las últimas energías con el fin de acercarse más al poblado lo más posible y ser rastreado por algún perro. NORMAL
+	~ Decrece_Salud. el frío de la noche puede dañar ceveramente la salud del PJ Si no llegas a ser descubierto por un perro antes de pasar dos turnos -> END_GAME_IN_DEATH "Amaneces muerto de frío"
+
+	Todavía no se oye nada, quizá tus esperanzas duerman con los perros de la casa
+	*	Reintentar -> Avanzar (ultima chance) Sí logras avanzar -> == perros ==
+	*	Será mejor esperar a pasar la noche. 
+		~ Decrece_Salud. el frío de la noche puede dañar ceveramente la salud del PJ Si no llegas a pasar ambos turnos -> END_GAME_IN_DEATH "Amaneces muerto de frío" Si tu salud es > sobrevives a la noche. Sos encontrado por un == Hombre a Caballo == -> == Hombre a Caballo ==
+
+*	LLegar hasta el poblado. Posiblemente arrastrarse hasta una casa y llamar a la puerta o hacer algún ruido al acercarse a la galería. DIFICIL
+
+	Amigo. Parece dificil esta misión. Tu cabeza no ha estado bien desde que diste con ese == cadaver_en_el_desierto ==. Inicias camino a posta_nahuel_huapi desde cadaver_en_el_desierto. (Flash Back) El éxito de tu opción dependerá de la salud que traigas del FlashBack. (Si huyes herido = fracaso seguro); (Si tu has matado = llegas atormentado: NORMAL); (Si entierras al hombre = SIMPLE)
+	*	Esperar. -> Esperar...(IDEM)
+	*	Nunca está muerto quie pelea. DIFICIL
+		~ Decrece_Salud. el frío de la noche puede dañar ceveramente la salud del PJ Si no llegas a pasar ambos turnos -> END_GAME_IN_DEATH "Amaneces muerto de frío" Si tu salud es > sobrevives (Si tu has matado = llegas atormentado: NORMAL); (Si entierras al hombre = SIMPLE) -> === afueras_de_Cholila ===
+
+
+
+------------------------
+EXITOS PARCIALES
+------------------------
+=== Hombre_a_caballo ===
+EXITO: 
+datos y explicación del éxito.
+Puntuación:
+Salud:
+Nueva Habilidad: 
+-> DONE
+
+=== Perros ===
+EXITO: 
+datos y explicación del éxito.
+Puntuación:
+Salud:
+Nueva Habilidad: 
+-> DONE
+
+=== afueras_de_Cholila ===
+EXITO: 
+datos y explicación del éxito.
+Puntuación:
+Salud:
+Nueva Habilidad: 
+-> DONE
+
+/*
+-------------------------
+FLASH BACK
+-------------------------
+=== Posta_Nahuel_huapi ===
+
+== Cadaver_en_el_desierto ==
+
+
+
+
+*/
+---------------------------
+FRACASO
+---------------------------
+=== END_GAME_IN_DEATH === 
+------------------------
+
