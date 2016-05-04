@@ -4,3 +4,9 @@ La aventura está enfocada principalmente en el período en el que "Butch Cassid
 
 El borrador está escrito en castellano con un marcado (pseudo markdown) e indicaciones y funciones que pueden facilmente transcribirse a ink. Lenguaje en el que se prepararán las compilaciones (usando inklecate) del pre-alfa.
 
+-----------------------------------
+Notas de desarrollo
+
+En el proceso de desarrollo se van dando en el borrador los contenidos, reglas, nociones generales y particulares sobre el juego etc. 
+Al final del borrador se van agregando los hilos y opciones que se van abriendo, pendientes, para ser retomadas en el desarrollo. Creo que esta es una buena forma de no perder el globo de la historia. 
+En los diferentes commit del borrador se puede ir viendo el proceso de expansión.
