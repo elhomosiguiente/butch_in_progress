@@ -3,19 +3,34 @@
 
 === define_variables y mecánicas ===
 
-// determina el paso de turno si salud < 1 END
+// Salud: determina el paso de turno. si salud < 1 END
 
 VAR salud = 7
 
-// determina la capacidad de recordar. La capacidad de recordar permite al PJ avanzar también hacia atrás, lo que permitirá al PJ Variar puntos de salud (ya sean positivos o negativos)
+// Conciencia: determina la capacidad de recordar. La capacidad de recordar permite al PJ avanzar también hacia atrás, lo que permitirá al PJ Variar puntos de salud (ya sean positivos o negativos)
 
 VAR conciencia = true
 
-// cuando salud < 5 -> conciencia = false. lo que desactivará toda opción de ir hacia atrás, dependiendo el éxito únicamente de los puntos de salud ya acumulados - tiradas - Dificultad de la acción. Y el éxito se vuelve lineal y la historia más directa.
+// Reglas: cuando salud < 5 -> conciencia = false. lo que desactivará toda opción de ir hacia atrás, dependiendo el éxito únicamente de los puntos de salud ya acumulados - tiradas - Dificultad de la acción. Y el éxito se vuelve lineal y la historia más directa.
+
+// Key_variables:
+VAR esperanza = false
+VAR compañia = false
+VAR fortuna = false
+
+// inventario:
+// Arma (para usar el arma se necesita que VAR colt sea verdadero y VAR muni > 0)
+VAR Colt = false
+VAR muni = 6
+
+
 
 === Hombre_caido ===
 
-/* Plot: Butch inicia tirado en el suelo. Recuperado parcialmente de una inconcia producida por una larga caminata o una herida o simplemente un delirio producido por algún trauma. Los antecedentes de la situación de == hombre_caido == son desconocidas hasta el momento.*/ 
+/* Plot: Butch inicia tirado en el suelo. Recuperado parcialmente de una inconcia producida por una larga caminata o una herida o simplemente un delirio producido por algún trauma. Los antecedentes de la situación de == hombre_caido == son desconocidas hasta el momento. Pero la única salida de la situación a través del recuerdo */ 
+
+/* Fracaso seguro. Prácticamente todas las decisiones de Butch llevan a una muerte segura. A menos que encuentre en los flashBack algunas claves que habiliten posibilidades de salvación. Estos elementos son: (1)la virgen (VAR esperanza = true. duplica puntos de salud); (2)la carta (VAR compañia = true. Rescate cuando son insuficientes los puntos de salud necesitados para lograr un objetivo puntual); (3)Dinero (VAR fortuna = true. mejora las chances de lograr objetivos mediante pagos, sobornos, comisiones, otros); (4)Arma.  
+Butch deberá morir inumerables veces y reiniciar siempre de la misma situación buscando la manera de tomar otras decisiones que lo lleven a una mejor situación o más favorable a la que se encuentra. EJ: Butch es rescatado por el hombre a caballo, pero el hombre le roba y mata, a menos que butch tenga un arma con la cual defenderse. */
 
 En primer lugar la situación == hombre_caido == se plantea como un desafío: llegar al poblado cercano para ser rescatado por alguien. La situación arroja al jugador a un sistema de opciones que inician la partida. Los puntos de salud dependen de los puntos obtenidos en las acciones de flashback. 
 
