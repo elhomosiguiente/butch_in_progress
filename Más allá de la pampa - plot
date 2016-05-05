@@ -4,7 +4,7 @@
 === define_variables y mecánicas ===
 
 // Salud: determina el paso de turno. si salud < 1 END
-
+// posible valor de inicio
 VAR salud = 7
 
 // Conciencia: determina la capacidad de recordar. La capacidad de recordar permite al PJ avanzar también hacia atrás, lo que permitirá al PJ Variar puntos de salud (ya sean positivos o negativos)
@@ -23,14 +23,17 @@ VAR fortuna = false
 VAR Colt = false
 VAR muni = 6
 
+=== inicio ===
+"Amigo, una cosa es segura: un día no estarás del lado correcto del arma" - Robert LeRoy Parker 
 
+*	Empezar -> hombre_caido
 
 === Hombre_caido ===
 
-/* Plot: Butch inicia tirado en el suelo. Recuperado parcialmente de una inconcia producida por una larga caminata o una herida o simplemente un delirio producido por algún trauma. Los antecedentes de la situación de == hombre_caido == son desconocidas hasta el momento. Pero la única salida de la situación a través del recuerdo */ 
+/* Plot: Butch inicia tirado en el suelo. Recuperado parcialmente de una inconcia producida por una larga caminata o una herida o simplemente un delirio producido por algún trauma. Los antecedentes de la situación de == hombre_caido == son desconocidas hasta el momento. Pero la única salida de la es situación a través del recuerdo */ 
 
-/* Fracaso seguro. Prácticamente todas las decisiones de Butch llevan a una muerte segura. A menos que encuentre en los flashBack algunas claves que habiliten posibilidades de salvación. Estos elementos son: (1)la virgen (VAR esperanza = true. duplica puntos de salud); (2)la carta (VAR compañia = true. Rescate cuando son insuficientes los puntos de salud necesitados para lograr un objetivo puntual); (3)Dinero (VAR fortuna = true. mejora las chances de lograr objetivos mediante pagos, sobornos, comisiones, otros); (4)Arma.  
-Butch deberá morir inumerables veces y reiniciar siempre de la misma situación buscando la manera de tomar otras decisiones que lo lleven a una mejor situación o más favorable a la que se encuentra. EJ: Butch es rescatado por el hombre a caballo, pero el hombre le roba y mata, a menos que butch tenga un arma con la cual defenderse. */
+/* Fracaso seguro. Prácticamente todas las decisiones de Butch llevan a una muerte segura. A menos que encuentre en los flashBack algunas claves que habiliten posibilidades de salvación. Estos elementos son: (1)la virgen (VAR esperanza = true. duplica puntos de salud); (2)la carta (VAR compañia = true. Rescate cuando son insuficientes los puntos de salud necesitados para lograr un objetivo puntual); (3)Dinero (VAR fortuna = true. mejora las chances de lograr objetivos mediante pagos, sobornos, comisiones, otros); (4)Arma, mejora tus chances de intimidación y combate.  
+Butch deberá morir inumerables veces y reiniciar siempre en la misma situación buscando la manera de tomar otras decisiones que lo lleven a una mejor condición o más favorable a la que se encuentra. EJ: Butch es rescatado por el hombre a caballo, pero el hombre le roba y mata, a menos que butch tenga un arma con la cual defenderse. Y así sucesivamente */
 
 En primer lugar la situación == hombre_caido == se plantea como un desafío: llegar al poblado cercano para ser rescatado por alguien. La situación arroja al jugador a un sistema de opciones que inician la partida. Los puntos de salud dependen de los puntos obtenidos en las acciones de flashback. 
 
@@ -90,6 +93,10 @@ Nueva Habilidad:
 FLASH BACK
 -------------------------
 === Posta_Nahuel_huapi ===
+
+/* Todavía hoy funciona allí. Ubicado sobre la ruta 40, en la naciente del río Limay, en las afueras de Bariloche. Denominado "Boliche Viejo" es la antigua posta del asentamiento Nahuel Huapi. El almacen perteneció a Jarred Jones, primer poblador americano (de origen texano) de esa región, descubierta por Francisco Pascasio (Perito) Moreno, unos 20 años antes de entrado el siglo xx. Se cree que Jones varias veces alojó a Butch Cassidy y algunos de sus amigos allí. Otros dicen que llegó a permanecer en la posta casi un mes, durante el período en que su familia (Etha y Sundance) pasó fuera de Cholila. (Sería interesante ver la libreta del almacén)  */
+
+
 
 == Cadaver_en_el_desierto ==
 
