@@ -28,6 +28,26 @@ VAR muni = 6
 
 *	Empezar -> hombre_caido
 
+=== combate_con_arma ===
+
+/* inicia secuencia de combate. Aquí se incluyen las mecanicas de combate con arma. Con fines de prueba se desarrollo un único knot donde se procesan los resultados y se redirije al pj a la escena anterior por Return o a secuencias posteriores según sea verdadero o no el knot visitado. 
+EJ1: {hombre_a_cabllo} -> 
+Ej2: -> Return.
+A combate_con_arma se llega únicamente si la opción "usar arma" está habilitada 
+(si Colt = true y muni >0)
+TODO: desarrollar script 
+*/
+
+Tu oponente {} :
+{salud} {arma} {destreza}
+- - - - - - - - - - -
+Tú:
+{salud} {arma} {destreza}
+
+*	Dale (run script) 
+// Imprime resultados:
+// -> Return
+
 === Hombre_caido ===
 
 /* Plot: Butch inicia tirado en el suelo. Recuperado parcialmente de una inconcia producida por una larga caminata o una herida o simplemente un delirio producido por algún trauma. Los antecedentes de la situación de == hombre_caido == son desconocidas hasta el momento. Pero la única salida de la es situación a través del recuerdo */ 
