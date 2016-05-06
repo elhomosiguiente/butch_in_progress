@@ -21,7 +21,12 @@ VAR fortuna = false
 // inventario:
 // Arma (para usar el arma se necesita que VAR colt sea verdadero y VAR muni > 0)
 VAR Colt = false
-VAR muni = 6
+VAR muni = 0
+
+
+/* FUNCION EXPERIMENTAL: función documental. Es una función de prueba que permite que el juego muestre información documental relevante a la antrada de cada knot. El contentenido documental se ecribe como encabezado y está disponible sólo si VAR documental = true. Y se puede activar desde el menú de configuración. Por defecto: */
+
+VAR documental = false 
 
 === inicio ===
 "Amigo, una cosa es segura: un día no estarás del lado correcto del arma" - Robert LeRoy Parker 
@@ -110,11 +115,12 @@ Nueva Habilidad:
 
 /*
 -------------------------
-FLASH BACK
+FLASH BACK LOOPS
 -------------------------
 === Posta_Nahuel_huapi ===
 
-/* Todavía hoy funciona allí. Ubicado sobre la ruta 40, en la naciente del río Limay, en las afueras de Bariloche. Denominado "Boliche Viejo" es la antigua posta del asentamiento Nahuel Huapi. El almacen perteneció a Jarred Jones, primer poblador americano (de origen texano) de esa región, descubierta por Francisco Pascasio (Perito) Moreno, unos 20 años antes de entrado el siglo xx. Se cree que Jones varias veces alojó a Butch Cassidy y algunos de sus amigos allí. Otros dicen que llegó a permanecer en la posta casi un mes, durante el período en que su familia (Etha y Sundance) pasó fuera de Cholila. (Sería interesante ver la libreta del almacén)  */
+/* Todavía hoy funciona allí. Ubicado sobre la ruta 40, en la naciente del río Limay, en las afueras de Bariloche. Denominado "Boliche Viejo" es la antigua posta del asentamiento Nahuel Huapi. El almacen perteneció a Jarred Jones, primer poblador americano (de origen texano) de esa región, descubierta por Francisco Pascasio (Perito) Moreno, unos 20 años antes de entrado el siglo xx. Se cree que Jones varias veces alojó a Butch Cassidy y algunos de sus amigos allí. Otros dicen que llegó a permanecer en la posta casi un mes, durante el período en que su familia (Etha y Sundance) pasó fuera de Cholila. (Existe libreta de almacen)  */
+
 
 
 
