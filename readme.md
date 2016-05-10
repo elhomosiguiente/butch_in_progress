@@ -10,3 +10,16 @@ Notas de desarrollo
 En el proceso de desarrollo se van dando en el borrador los contenidos, reglas, nociones generales y particulares sobre el juego etc. 
 Al final del borrador se van agregando los hilos y opciones que se van abriendo, pendientes, para ser retomadas en el desarrollo. Creo que esta es una buena forma de no perder el globo de la historia. 
 En los diferentes commit del borrador se puede ir viendo el proceso de expansión.
+
+------------------------------------
+Voy a agregar variables que tienen que ver con modalidades del relato y que posiblemente se setéen desde un inicio con elgún tipo de menú. 
+
+** VAR historificacion = false **
+imprime información historica si la variable es verdadera al comienzo de escenas, secuencias, sitios y personajes
+
+** VAR notas/desarrollo = false **  
+imprime notas de viajes, datos complementarios de actualidad, referencias, diario de viaje, notas de desarrollo, etc
+
+** VAR gamificacion = false **
+imprime información sobre niveles, puntos alcanzados, objetivos, del estilo de completar niveles, iniciar niveles, y secuencias de logros, recuentos (puntos) etc. 
+
