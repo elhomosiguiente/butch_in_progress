@@ -23,3 +23,8 @@ imprime notas de viajes, datos complementarios de actualidad, referencias, diari
 ** VAR gamificacion = false **
 imprime información sobre niveles, puntos alcanzados, objetivos, del estilo de completar niveles, iniciar niveles, y secuencias de logros, recuentos (puntos) etc. 
 
+
+---------------
+RPG - RoleplayGames y Romanticismo. 
+Los juegos de mesa, tablas, dados, cartas, piezas y papel hen sido por lo general hasta el RPG juegos clásicos. 
+Clasichen, Clasic, son una forma moderna universal y hasta mátemática de comprender las mecánicas de juego. El RPG introduce al PJ al igual que el romanticismo introduce a un sujeto aunque más no sea para perderlo en la naturaleza. El rol tiene un poco de eso y la aventura comienza. Pra escribir sobre el RPG y el romanticismo, porqué el plot romántico se elije para el gamewriting.
