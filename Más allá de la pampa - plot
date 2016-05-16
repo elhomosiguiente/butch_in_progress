@@ -7,7 +7,7 @@
 // posible valor de inicio
 VAR salud = 7
 
-// Conciencia: determina la capacidad de recordar. La capacidad de recordar permite al PJ avanzar también hacia atrás, lo que permitirá al PJ Variar puntos de salud (ya sean positivos o negativos)
+// Conciencia: determina la capacidad de recordar. La capacidad de recordar permite al PJ avanzar también hacia atrás, lo que permitirá al PJ Variar puntos de salud (ya sean positivos o negativos) entre otras cosas
 
 VAR conciencia = true
 
@@ -15,7 +15,7 @@ VAR conciencia = true
 
 // Key_variables:
 VAR esperanza = false
-VAR compañia = false
+VAR ayuda = false
 VAR fortuna = false
 
 // inventario:
@@ -28,6 +28,12 @@ VAR muni = 0
 
 VAR historificacion = false 
 imprime información historica si la variable es verdadera al comienzo de escenas, secuencias, sitios y personajes
+http://webs.advance.com.ar/gavirati/Butch_Cassidy.htm
+http://www.lanacion.com.ar/222717-una-carta-de-butch-cassidy
+https://es.wikipedia.org/wiki/Butch_Cassidy
+
+
+
 
 VAR notas_desarrollo = false   
 imprime notas de viajes, datos complementarios de actualidad, referencias, diario de viaje, notas de desarrollo, etc
@@ -44,7 +50,7 @@ imprime información sobre niveles, puntos alcanzados, objetivos, del estilo de 
 
 === combate_con_arma ===
 
-/* inicia secuencia de combate. Aquí se incluyen las mecanicas de combate con arma. Con fines de prueba se desarrollo un único knot donde se procesan los resultados y se redirije al pj a la escena anterior por Return o a secuencias posteriores según sea verdadero o no el knot visitado. 
+/* inicia secuencia de combate. Aquí se incluyen las mecanicas de combate con arma. Con fines de prueba se desarrolló un único knot donde se procesan los resultados y se redirije al pj a la escena anterior por Return o a secuencias posteriores según sea verdadero o no el knot visitado. 
 EJ1: {hombre_a_cabllo} -> 
 Ej2: -> Return.
 A combate_con_arma se llega únicamente si la opción "usar arma" está habilitada 
@@ -63,13 +69,14 @@ Tú:
 // -> Return
 
 === Hombre_caido ===
+//inicio de la historia
 
 /* Plot: Butch inicia tirado en el suelo. Recuperado parcialmente de una inconcia producida por una larga caminata o una herida o simplemente un delirio producido por algún trauma. Los antecedentes de la situación de == hombre_caido == son desconocidos hasta el momento. Pero la única salida de la situación es a través del recuerdo. Básicamente todos son grandes o pequeños loops mentales o ciclos que recorre el personaje */ 
 
 /* Fracaso seguro. Prácticamente todas las decisiones de Butch llevan a una muerte segura. A menos que encuentre en los flashBack algunas claves que habiliten posibilidades de salvación. Estos elementos son: (1)la virgen (VAR esperanza = true. duplica puntos de salud); (2)la carta (VAR compañia = true. Rescate cuando son insuficientes los puntos de salud necesitados para lograr un objetivo puntual); (3)Dinero (VAR fortuna = true. mejora las chances de lograr objetivos mediante pagos, sobornos, comisiones, otros); (4)Arma, mejora tus chances de intimidación y combate.  
 Butch deberá morir inumerables veces y reiniciar siempre en la misma situación buscando la manera de tomar otras decisiones que lo lleven a una mejor condición o más favorable a la que se encuentra. EJ: Butch es rescatado por el hombre a caballo, pero el hombre le roba y mata, a menos que butch tenga un arma con la cual defenderse. Y así sucesivamente. No hay una única solución, hay varias pero sólo de una manera se puede armar el rompecabezas que llega hasta el final de la historia, sino los éxitos serán sólo parciales y la historia deberá avanzar de forma escalonada, resurrecciones de por medio vía ->END/RESTART */
 
-En primer lugar la situación == hombre_caido == se plantea como un desafío: llegar al poblado cercano para ser rescatado por alguien. La situación arroja al jugador a un sistema de opciones que inician la partida. Los puntos de salud dependen de los puntos obtenidos en las acciones de flashback. Por defecto, dado que butch está herido los puntos podrían ser 5-7. 
+En primer lugar la situación == hombre_caido == se plantea como un desafío: llegar al poblado cercano para ser rescatado por alguien. La situación arroja al jugador a un sistema de opciones que inician la partida. Los puntos de salud dependen de los puntos obtenidos en las acciones de flashback. Por defecto, dado que butch está herido los puntos podrían ser 6-7. 
 
 * 	Esperar. Conservar energías para que pase la noche y ser visto durante el día. SIMPLE
 	~ Decrece_Salud. el frío de la noche puede dañar ceveramente la salud del PJ Si no llegas a pasar ambos turnos -> END_GAME_IN_DEATH "Amaneces muerto de frío"
@@ -134,7 +141,7 @@ FLASH BACK LOOPS
 -------------------------
 === Posta_Nahuel_huapi ===
 
-/* {historificacion} Todavía hoy funciona allí. Ubicado sobre la ruta 40, en la naciente del río Limay, en las afueras de la ciudad de Bariloche. Denominado "Boliche Viejo" es la antigua posta del asentamiento Nahuel Huapi. El almacen perteneció a Jarred Jones, primer poblador americano (de origen texano) de esa región, descubierta por Francisco Pascasio (Perito) Moreno, unos 20 años antes de entrado el siglo xx. Se cree que Jones varias veces alojó a Butch Cassidy y algunos de sus amigos allí. Otros dicen que llegó a permanecer en la posta casi un mes, durante el período en que su familia (Etha y Sundance) pasó fuera de Cholila. (Existe libreta de almacen que documenta su estadía)  */
+/* {historificacion} Todavía hoy funciona allí. Ubicado sobre la ruta 40, en la naciente del río Limay, en las afueras de la ciudad de Bariloche. Denominado "Boliche Viejo" es la antigua posta del asentamiento Nahuel Huapi. El almacen perteneció a Jarred Jones, primer poblador americano (de origen texano) de esa región, descubierta por Francisco Pascasio (Perito) Moreno, unos 20 años antes de entrado el siglo xx. Se cree que Jones varias veces alojó a Butch Cassidy y algunos de sus amigos allí. Otros dicen que llegó a permanecer en la posta casi un mes, durante el período en que su familia (Etha y Sundance) pasó fuera de Cholila. (Existe libreta de almacen que documenta su estadía)  "La previa del IV Simposio de Bandoleros comenzó en el Boliche Viejo de Bariloche. Allí funcionó uno de los primeros boliches de la Patagonia y en el presente, desde hace más de diez años es atendido por los mozos más famosos de la zona. Este boliche era propiedad de Jarred Jones, ubicado en la naciente del Limay en Nahuel Huapi y era el paso obligado de todos los viajeros. En los libros de almacén figuran todas las actividades económicas de Butch, Sundance y Ethel con los Jones, incluso una estadía de un mes de Santiago Ryan alias Butch Cassidy." */
 
 /* {notas} el knot inicia la secuencia de loop o flashback más importante de la primera etapa del relato, es la puerta del raconto y la apertura a una cantidad de opciones que determinarán el momento de su retorno a hombre_caido y la condición en la que volverá: determinante para el éxito total, parcial o fracaso de su llegada a cholila: objetivo del juego */
 
@@ -157,6 +164,7 @@ FRACASO:
 Datos del fracaso: 
 GAME OVER
 -> END/RESTART
+cuando VAR salud < 1
 */
 ------------------------
 EXITO
@@ -167,5 +175,6 @@ Final del juego: Epílogo
 Resumen del éxito: 
 */
 
-FIN
+...FIN
+
 -> END
