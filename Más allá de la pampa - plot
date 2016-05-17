@@ -18,10 +18,17 @@ VAR esperanza = false
 VAR ayuda = false
 VAR fortuna = false
 
-// inventario:
+// ########## Inventario ##########
+
 // Arma (para usar el arma se necesita que VAR colt sea verdadero y VAR muni > 0)
 VAR Colt = false
 VAR muni = 0
+// la carta es la clave para abrir un nuevo loop. El de volver a la pandilla salvaje
+VAR carta = false
+// el libro es el elemento que permite a butch no cometer su primer delito
+VAR libro = false
+// amuleto se obtiene luego de conocer a la virgen sureña. Amuleto permite ser rescatado por hombre a caballo sin ser robado y asesinado. No hay tampoco necesidad de amedrentarlo o matarlo. 
+VAR amuleto = false
 
 
 /* FUNCIONES EXPERIMENTALES: funciones de prueba que permite que el juego muestre información relevante a la antrada de cada knot. El contentenido de estas se escribe como encabezado y está disponible sólo si la VAR correspondiente = true. Y se puede activar desde el menú de configuración. Por defecto: 
@@ -125,6 +132,13 @@ EXITOS PARCIALES
 	Puntuación:
 	Salud:
 	Nueva Habilidad: 
+
+NOTA: matar al hombre a caballo trae dificiles consecuencias para continuar la vida en el sur, obliga a tener que comenzar a huir y robar para no ser encontrado. Las noticias llegan rápido a BS AS y pierdes el apoyo de los demás. La prensa se pone en contra de las coloñas de cowboys en patagonia y se adelanta la aparición de la policia fronteriza. Tampoco te pieden cubrir de la Pinkerton. el único éxito de matar hombre a caballo es recuperarse pronto y huír a chile aprovechando los conflictos políticos. 
+
+Si no matas a hombre a caballo, y sobrevives porque VAR amuleto = true. Entonces tus posibilidades de seguir afincado en cholila mejoran. Demora la aparición de Frank Demaio (Agente Pinkerton). 
+
+La aparición de Frank Demaio se activa a partir de un evento_x_triger. La aparición de Demaio una vez activada se comienza a narrar como una especie de montaje paralelo. A la par de tus acciones, se va contando de distintas maneras su acercamiento. "El Agente de la Pinkerton Frank Demaio llega a la Argentina", "Frank de Maio se entrevista con el vice consul Norteamericano George Newbery", "Un Agente de la pinkerton levanta sospechas sobre posibles actividades delictivas en la pampa argentina" etc, etc. (podrían ser titulares de noticias, o simples líneas. Resolver) 
+
 
 -> DONE
 */
