@@ -1,6 +1,10 @@
 // Más allá de la pampa 
 // Borrador
 
+TODO: (1)preview-A una pequeña prueba de la narrativa; (2) preview-B una prueba de la narrativa y básica de la jugabilidad; (3) pre-alfa una primera versión completa para testear.  
+
+
+
 === define_variables y mecánicas ===
 
 // Salud: determina el paso de turno. si salud < 1 END
