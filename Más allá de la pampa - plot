@@ -1,6 +1,7 @@
 // Más allá de la pampa 
 // Borrador
 
+
 TODO: (1)preview-A una pequeña prueba de la narrativa; (2) preview-B una prueba de la narrativa y básica de la jugabilidad; (3) pre-alfa una primera versión completa para testear.  
 
 
@@ -109,7 +110,7 @@ En primer lugar la situación == hombre_caido == se plantea como un desafío: ll
 	Si tu salud es > sobrevives a la noche. Sos encontrado por un == Hombre a Caballo == -> == Hombre a Caballo ==
 		* Avanzar. No debe faltar mucho para el amanecer -> Avanzar
 
-* 	Avanzar. Poner en riezgo la vida gastando las últimas energías con el fin de acercarse más al poblado lo más posible y ser rastreado por algún perro. NORMAL
+* 	Avanzar. Poner en riesgo la vida gastando las últimas energías con el fin de acercarse más al poblado lo más posible y ser rastreado por algún perro. NORMAL
 	~ Decrece_Salud. el frío de la noche puede dañar ceveramente la salud del PJ Si no llegas a ser descubierto por un perro antes de pasar dos turnos -> END_GAME_IN_DEATH "Amaneces muerto de frío"
 
 	Todavía no se oye nada, quizá tus esperanzas duerman con los perros de la casa
@@ -192,6 +193,27 @@ Información que se revela:
 
 
 == Cadaver_en_el_desierto ==
+
+/* {historificacion} ...“En el territorio comprendido entre los ríos Neuquén, Limay, Cordillera de Los Andes y Lago Nahuel Huapi; no ha quedado un solo indio, todos han sido arrojados al occidente (…) Al sur del río Limay, queda del salvaje los restos del cacique Sayhueque huyendo, pobre, miserable y sin prestigio(…)
+General argentino Villegas1 5 de mayo de 1883
+
+Para el cambio de siglo, butch se internaba en lo que apenas década y media atrás era denominado territorio indio. Con exepción de algunas misiones Salesianas, y la incursión de unas pocas expediciones, el hombre civilizado no conocía está región. 
+para llegar se navegaba en vapor de bs as a carmen de patagones y luego se hacía el camino de los rifleros galeses, cruzando de este a oeste la estepa patagónica.  
+
+Para cuando Butch arriba a la argentina, Bs As todavía entregaba indios de la Campaña:
+
+"ENTREGA DE INDIOS. Los miércoles y los viernes se efectuará la entrega de indios y chinas a las familias de esta ciudad, por medio de la Sociedad de Beneficencia"
+El Nacional66
+
+- - - - - - - - -
+El mismo diario describe aquellas escenas del siguiente modo:
+
+"La desesperación, el llanto no cesa. Se les quita a las madres sus hijos para en su presencia regalarlos, a pesar de los gritos, los alaridos y las súplicas que hincadas y con los brazos al cielo dirigen las mujeres indias. En aquel marco humano unos se tapan la cara, otros miran resignadamente al suelo, la madre aprieta contra su seno al hijo de sus entrañas, el padre se cruza por delante para defender a su familia".
+
+El Nacional66
+- - - - - - - - -
+*/
+
 
 Giusseppe (el cura) habla de la evegelización y del delito del bueno y del malo.
 
