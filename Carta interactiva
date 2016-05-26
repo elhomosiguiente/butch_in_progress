@@ -1,0 +1,18 @@
+Carta interactiva
+-------------------
+Alternatva a la secuencia de la carta: 
+Butch se sienta finalente a escribir la carta. Se dan opciones al player para encabezar la carta "Dear (x)"
+
+	x George (Newbery)
+	x ...... (carta a sus amigos)
+	x otra opción (plot menor)
+
+La mecánica de la interacción de la carta depende del estado de variables anteriores y de opciones libres. Evaluar qué da mejores resultados. 
+	si las opciones son libres el player toma opciones a gusto por ejemplo.
+		escribir a George y mandar la carta a bs as 
+		escribir a sus amigos y mandar a USA
+	si las apciones son determinadas por las variables, escribira por ejemplo.
+		a George, si antes pasó tal cosa entonces VAR tal_cosa = true/false.
+		o a Sus amigos, si VAR tal_cosa = true/false. o VAR_otra_cosa = true/false.
+
+El texto de la carta siempre es libre. el delibery depende del Head.
