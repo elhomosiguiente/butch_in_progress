@@ -30,9 +30,20 @@ imprime información sobre niveles, puntos alcanzados, objetivos, del estilo de 
 RPG - RoleplayGames y Romanticismo. 
 Los juegos de mesa, tablas, dados, cartas, piezas y papel hen sido por lo general hasta el RPG juegos clásicos. 
 Clasichen, Clasic, son una forma moderna universal y hasta mátemática de comprender las mecánicas de juego. El RPG introduce al PJ al igual que el romanticismo introduce a un sujeto aunque más no sea para perderlo en la naturaleza. El rol tiene un poco de eso y la aventura comienza. Pra escribir sobre el RPG y el romanticismo, porqué el plot romántico se elije para el gamewriting.
+
 ------------------
 ## UI nota:
 Estaria bueno para opciones de historiestá diferente para entrar en modo conversacion. Imagen del personaje con el que estás conversando.  Y distinta ui para los diálogos.  Esta está buena para usar de base. 
 
 ![demo](DOCS/1464229061370916802994.jpg)
 
+- - - - - - - -
+Un Juego para lectores. 
+Prólogo: Maldito lector, anímate a viajar más allá de la Pampa de los textos.
+
+Adquisiciones. Al finalizar el juego el lector hábrá:
+* descubierto una experiencia de lectura diferente
+* lectura y selección (ampliar normas LECTURA/SELECTURA)
+* explorado misterios y personajes de la patagonia Argentina
+* involucrado con temáticas de la historia argentina. (ley de tierras, campaña del desierto, indios, extranjeros, compañías, el orden rural y ciudadano, etc.)
+- - - - - - - - - -
