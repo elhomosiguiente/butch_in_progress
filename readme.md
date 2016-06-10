@@ -1,4 +1,5 @@
 https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+http://elhomosiguiente.github.io/butch_in_progress
 
 Este proyecto contiene un draft en el que se está desarrollando el plot, reglas y mecánicas de una ficción interactiva o text adventure que tiene lugar en la Patagonia Argentina sobre la base histórica y documentada del paso de Butch Cassidy por la región en los años 1901-1905. Instpirado tanto en investigaciones bien documentadas, publicaciones, como en mitos, leyendas, viajes y entrevistas, que recuperan ese aire farwest que sobrevive aun hoy en el folklore del sur argentino. 
 
