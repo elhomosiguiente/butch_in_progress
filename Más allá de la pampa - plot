@@ -122,7 +122,7 @@ En primer lugar la situación == hombre_caido == se plantea como un desafío: ll
 
 	Amigo. Parece dificil esta misión. Tu cabeza no ha estado bien desde que diste con ese == cadaver_en_el_desierto ==. Inicias camino a posta_nahuel_huapi desde cadaver_en_el_desierto. (Flash Back) El éxito de tu opción dependerá de la salud que traigas del FlashBack. (Si huyes herido = fracaso seguro); (Si tu has matado = llegas atormentado: NORMAL); (Si entierras al hombre = SIMPLE)
 	*	Esperar. -> Esperar...(IDEM)
-	*	Nunca está muerto quie pelea. DIFICIL
+	*	Nunca está muerto quien pelea. DIFICIL
 		~ Decrece_Salud. el frío de la noche puede dañar ceveramente la salud del PJ Si no llegas a pasar ambos turnos -> END_GAME_IN_DEATH "Amaneces muerto de frío" Si tu salud es > sobrevives (Si tu has matado = llegas atormentado: NORMAL); (Si entierras al hombre = SIMPLE) -> === afueras_de_Cholila ===
 
 
@@ -208,7 +208,7 @@ para llegar se navegaba en vapor de bs as a [carmen de patagones] y luego se hac
 Para cuando Butch arriba a la argentina, Bs As todavía entregaba indios de la Campaña:
 
 "[ENTREGA DE INDIOS]. Los miércoles y los viernes se efectuará la entrega de indios y chinas a las familias de esta ciudad, por medio de la Sociedad de Beneficencia"
-El Nacional66
+El Nacional
 
 [ENTREGA DE INDIOS]
 	El mismo diario describe aquellas escenas del siguiente modo:
@@ -216,8 +216,12 @@ El Nacional66
 
 */
 
-
 Giusseppe (el cura) habla de la evegelización y del delito del bueno y del malo.
+
+........................
+........................
+..............
+.......
 
 
 
